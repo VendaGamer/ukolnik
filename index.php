@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "hangman";
+$dbname = "";
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -24,8 +24,9 @@ catch(PDOException $e)
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./js/bootstrap.min.js">
   <title>Ukolnik</title>
 </head>
 <body class="bg-secondary">
@@ -55,6 +56,6 @@ catch(PDOException $e)
 
   </form>
   </div>
-  <script src="script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
